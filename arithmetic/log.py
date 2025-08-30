@@ -1,15 +1,15 @@
 import math
 
 while True:
-    logtypechoice = input("Use natural logarithm ? (Y/N) ")
+    logtypechoice = input("Use natural logarithm ? (Y/N) ").lower()
 
-    if logtypechoice == "Y":
+    if logtypechoice == "y":
         natlognum = float(input("Enter a number "))
         natlognumresult = (math.log(natlognum))
         print(natlognumresult)
         
 
-    elif logtypechoice == "N":
+    elif logtypechoice == "n":
         base = float(input("Base? "))
         lognum = float(input("Number? "))
         logresult = math.log(lognum, base)
